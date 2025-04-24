@@ -1,0 +1,35 @@
+
+<div style="display: flex;flex-direction: column;gap: 20px;">
+    <div style="width: 100%;height: 100px;background-color: rgb(107, 46, 182);display: flex;justify-content: center;">
+        <span style="align-content: center;
+        font-size: xxx-large;
+        font-weight: bolder;
+        color: white;">To Do List</span>
+    </div>
+    <div style="display: flex;justify-content: center;flex-direction: row;">
+        <div style="background-color: rgb(107, 46, 182);height: 65px;display: flex;
+            align-items: center;padding: 14px;width: 525px;gap: 10px;justify-content: space-between;">
+            <div style="height: 45px;width: 350px;border: 2px solid white;background-color: white;">
+               <input type="text" style="border: none;background-color: none;height: 40px;width: 345px" #inputVal>
+            </div>
+            <div style="border: 1px solid white;height: 45px;width: 120px;display: flex;justify-content: center;">
+                <button style="border: none;background: none;cursor: pointer;" (click)="addTask(inputVal.value)">
+                    <span style="display: flex;align-items: center;font-size: medium;font-weight: 700;color: white;">Add Task</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div style="display: flex;justify-content: center;flex-direction: row;">
+        <div style="background-color: rgb(107, 46, 182);height: 65px;display: flex;
+            align-items: center;padding: 14px;width: 525px;gap: 10px;justify-content: space-between;">
+            <div style="height: 55px;width: 350px;background-color: #d5c6e1;">
+               
+            </div>
+            <div style="border: 1px solid #cfc4dc;height: 45px;width: 120px;display: flex;justify-content: center;background-color: #cfc4dc;">
+                <button style="border: none;background: none;cursor: pointer;" (click)="delete()">
+                    <span style="display: flex;align-items: center;font-size: medium;font-weight: 700;color: #673ab7;">Delete</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
