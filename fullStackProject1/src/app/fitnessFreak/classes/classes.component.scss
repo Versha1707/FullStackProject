@@ -1,0 +1,86 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 58px;
+    gap: 40px;
+}
+.textContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 58px;
+    gap: 40px;
+}
+
+.trainerText{
+    font-size: 50px;
+    font-weight: 600;
+    color: #063f3b;
+}
+
+.centerText{
+    font-size: 36px;
+    font-weight: 500;
+    color: #063f3b;
+}
+
+.matCardContainer{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    gap: 20px;
+    height: 370px;
+    padding: 50px;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin: 20px;
+  height: 430px;
+}
+
+.card-wrapper {
+  display: flex;
+  gap: 16px;
+  overflow: hidden;
+  height: 400px;
+}
+
+.carousel-card {
+    width: 300px;
+    background: #2b6862;
+    color: #e5e5e5;
+    font-size: medium;
+    gap: 25px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.carousel-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.image{
+    display: flex;
+    // height: 240px;
+    width: 250px;
+    justify-content: center;
+}
+
+.title{
+    color: aliceblue;
+}
+
+.subtitle{
+    color: aliceblue;
+}
+
+::ng-deep .mdc-button .mdc-button__label{
+    color: aliceblue !important;
+}
