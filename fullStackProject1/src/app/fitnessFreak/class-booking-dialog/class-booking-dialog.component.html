@@ -1,0 +1,13 @@
+<h2 mat-dialog-title>Book {{data.val}} Class</h2>
+<mat-dialog-content>
+  <p>Select Date and Time</p>
+  <mat-form-field>
+    <input matInput placeholder="Select Next Meeting Date" class="label" [matDatepicker]="picker" [min]="today">
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker panelClass="custom-datepicker"></mat-datepicker>
+</mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button >No Thanks</button>
+  <button mat-button cdkFocusInitial>Ok</button>
+</mat-dialog-actions>

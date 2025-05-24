@@ -1,0 +1,52 @@
+.yogaMainContainer{
+    background-color: #acb6b3;
+    height: 100%;
+}
+
+.yogaText{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 65px;
+    font-weight: 800;
+    color: #1c5f55;
+    gap: 40px;
+}
+.p {
+  font-family: Lato;
+}
+
+.video{
+    display: flex;
+    justify-content: flex-start;
+    height: 50%;
+}
+
+.example-section {
+  display: contents;
+  align-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.example-margin {
+  margin: 0 10px;
+  display: flex;
+  align-self: center;
+}
+
+::ng-deep .mat-divider{
+    background-color: #1e5149;
+    margin-top: 2%;
+}
+
+.button{
+    font-size: 20px;
+    background-color: #1c5f55;
+    color: white;
+    width: 220px;
+    height: 60px;
+    border-radius: 40px;
+    cursor: pointer;
+    border: 1px;
+}
