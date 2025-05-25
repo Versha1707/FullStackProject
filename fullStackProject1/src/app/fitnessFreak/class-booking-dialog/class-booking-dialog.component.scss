@@ -1,0 +1,38 @@
+.dialogContainer{
+    height: 365px;
+    width: 450px;
+}
+
+::ng-deep .mat-mdc-dialog-actions{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+::ng-deep .mat-mdc-dialog-container{
+    // background-color: #5d9889;
+}
+
+::ng-deep .mat-mdc-dialog-container {
+    --mdc-dialog-container-color: #9eb9b1 !important;
+    --mdc-dialog-with-divider-divider-color: rgba(0, 0, 0, 0.12);
+    --mdc-dialog-subhead-color: rgba(0, 0, 0, 0.87);
+    --mdc-dialog-supporting-text-color: rgba(0, 0, 0, 0.6);
+}
+
+::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled){
+    background-color: #d3dedb;
+}
+
+.button{
+    border: 1px solid #425851;
+    border-radius: 20px;
+    width: 180px;
+    background-color: #1c5f55;
+    color: #d5f7ee;
+    text-transform: uppercase;
+}
+
+::ng-deep .mat-mdc-button .mdc-button__label {
+    color: #c5f2e9;
+}

@@ -1,0 +1,26 @@
+<app-header (dataEvent)="receiveData($event)"></app-header>
+<div class="homeContainer">
+    <div *ngIf="tabSelected=='CLASSES'">
+        <app-classes></app-classes>
+    </div>
+    <div *ngIf="tabSelected=='WORKOUT PLANS'">
+        <app-workout></app-workout>
+    </div>
+    <div *ngIf="tabSelected=='DIET PLANS'">
+       <app-diet></app-diet>    
+    </div>
+    <div *ngIf="tabSelected=='PROGRESS TRACKER'">
+        <app-tracker></app-tracker>
+    </div>
+    <div *ngIf="tabSelected=='MY PROFILE'">
+        <app-profile></app-profile>
+    </div>
+    <div *ngIf="tabSelected=='OUR MEMBERS'">
+        <app-feedback></app-feedback>
+    </div>
+    <div *ngIf="tabSelected=='CONTACT US'">
+        <app-contact></app-contact>
+    </div>
+
+</div>
+<router-outlet></router-outlet>

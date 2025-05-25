@@ -1,0 +1,58 @@
+<div class="dialogContainer">
+  <h2 mat-dialog-title>Book {{data.val}} Class</h2>
+  <mat-dialog-content>
+    <p>Select Date and Time</p>
+    <!-- <mat-form-field class="example-full-width">
+      <mat-label>Choose a date</mat-label>
+      <input matInput [matDatepicker]="picker">
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field> -->
+    <!-- <mat-form-field appearance="fill">
+  <mat-label>Pick a time</mat-label>
+  <input matInput
+         [ngxMatTimepicker]="picker"
+         readonly
+         [(ngModel)]="selectedTime"
+         placeholder="Select time">
+  <ngx-mat-timepicker #picker></ngx-mat-timepicker>
+</mat-form-field> -->
+
+<mat-form-field appearance="fill">
+    <mat-label>Select Date</mat-label>
+    <input matInput [matDatepicker]="picker" [(ngModel)]="selectedDate" name="selectedDate" required>
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+
+  <div style="display: flex;gap: 20px;">
+    <mat-form-field appearance="fill">
+        <mat-label>Hour</mat-label>
+        <mat-select [(ngModel)]="selectedHour" name="selectedHour" required>
+          <mat-option *ngFor="let hour of hours" [value]="hour">{{ hour }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Minute</mat-label>
+        <mat-select [(ngModel)]="selectedMinute" name="selectedMinute" required>
+          <mat-option *ngFor="let minute of minutes" [value]="minute">{{ minute }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <mat-label>AM/PM</mat-label>
+        <mat-select [(ngModel)]="selectedPeriod" name="selectedPeriod" required>
+          <mat-option value="AM">AM</mat-option>
+          <mat-option value="PM">PM</mat-option>
+        </mat-select>
+      </mat-form-field>
+  </div>
+
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <button mat-button class="button" (click)="cancel()">Cancel</button>
+    <button mat-button cdkFocusInitial class="button">Book</button>
+  </mat-dialog-actions>
+</div>
