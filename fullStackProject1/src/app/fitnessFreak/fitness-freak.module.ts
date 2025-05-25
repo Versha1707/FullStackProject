@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, DatePipe } from '@angular/common';
 
 import { FitnessFreakRoutingModule } from './fitness-freak-routing.module';
 import { FitnessFreakComponent } from './fitness-freak.component';
@@ -18,6 +18,8 @@ import { ZumbaComponent } from './zumba/zumba.component';
 import { GymComponent } from './gym/gym.component';
 import { AerobicsComponent } from './aerobics/aerobics.component';
 import { DanceComponent } from './dance/dance.component';
+import { ClassBookingDialogComponent } from './class-booking-dialog/class-booking-dialog.component';
+import { NgxMatTimepickerModule } from 'ngx-mat-timepicker';
 
 
 @NgModule({
@@ -37,11 +39,13 @@ import { DanceComponent } from './dance/dance.component';
     GymComponent,
     AerobicsComponent,
     DanceComponent,
+    ClassBookingDialogComponent,
   ],
   imports: [
     CommonModule,
     FitnessFreakRoutingModule,
-    SharedModule
+    SharedModule,
+    NgxMatTimepickerModule
   ]
 })
 export class FitnessFreakModule { }

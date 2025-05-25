@@ -1,1 +1,62 @@
-<p>yoga works!</p>
+<div class="yogaMainContainer">
+    <div style="display: flex;gap: 20px;flex-direction: column;padding: 75px;height: -webkit-fill-available;">
+        <div class="yogaText">
+            <div style="font-size: 48px;">YOGA</div>
+            <div style="display: flex;flex-direction: row;gap: 20px;">
+                <div style="display: flex;flex-direction: column;gap: 10px;">
+                    <div>
+                        <span style="font-size: 20px;">Calories</span>
+                    </div>
+                    <div style="display: flex;gap: 14px;">
+                        <img style="height: 30px;width: 25px;" src="../../../assets/images/calories.png" alt="">
+                        <span style="font-size: 18px;align-content: center;">250</span>
+                    </div>
+                </div>
+                <div>
+                    <span style="font-size: 20px;">Intensity</span>
+                </div>
+            </div>
+            <div style="display: flex;flex-direction: row;gap: 20px;">
+                <div style="display: flex;flex-direction: column;gap: 6px;">
+                    <span style="font-size: 20px;">Benefits</span>
+                    <span style="font-size: 12px;">Flexibility | Stress reduction | Mental & Emotional Well Being</span>
+                </div>
+            </div>
+            <div style="display: flex;flex-direction: row;gap: 20px;">
+                <div style="display: flex;flex-direction: column;gap: 6px;">
+                    <span style="font-size: 40px;">Intro To Yoga</span>
+                </div>
+            </div>
+        </div>
+        <div id="instructions" class="video">
+            <video id="my_video_1" class="video-js vjs-default-skin" controls preload="auto" autoplay muted
+            poster='http://video-js.zencoder.com/oceans-clip.jpg'
+            data-setup='{ "aspectRatio":"640:267", "playbackRates": [1, 1.5, 2] }'>
+            <source src="https://vjs.zencdn.net/v/oceans.mp4" type='video/mp4' />
+            <source src="https://vjs.zencdn.net/v/oceans.webm" type='video/webm' />
+            </video>
+        </div>
+        <div style="display: flex;flex-direction: column;gap: 20px;">
+            <div style="display: flex;flex-direction: column;gap: 6px;">
+                <span style="font-size: 20px;color: #1c5f55;">A Typical Yoga Session</span>
+            </div>
+            <div style="display: inline-flex;width: 90%;">
+                <div style="    display: flex;align-items: center;">Begin</div>
+                <section class="example-section">
+                    <mat-progress-bar
+                        class="example-margin"
+                        [mode]="mode"
+                        [value]="value">
+                    </mat-progress-bar>
+                </section>
+                <div style="display: flex;width: 60px;align-items: center;">50 mins</div>
+            </div>
+        </div>
+        <mat-divider></mat-divider>
+        <div style="display: flex;align-self: flex-end;gap: 20px;">
+            <div style="display: flex;flex-direction: column;gap: 6px;">
+                <button class="button" (click)="openDialog('Yoga')">Schedule A Class</button>
+            </div>
+        </div>
+    </div>
+</div>
