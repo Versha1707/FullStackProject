@@ -19,7 +19,7 @@ import { GymComponent } from './gym/gym.component';
 import { AerobicsComponent } from './aerobics/aerobics.component';
 import { DanceComponent } from './dance/dance.component';
 import { ClassBookingDialogComponent } from './class-booking-dialog/class-booking-dialog.component';
-import { MatDatepickerModule } from '@angular/material/datepicker';
+import { NgxMatTimepickerModule } from 'ngx-mat-timepicker';
 
 
 @NgModule({
@@ -45,7 +45,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
     CommonModule,
     FitnessFreakRoutingModule,
     SharedModule,
-  ],
-  providers:[DatePipe]
+    NgxMatTimepickerModule
+  ]
 })
 export class FitnessFreakModule { }
